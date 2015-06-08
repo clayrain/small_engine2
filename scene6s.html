@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>scene 6</title>
+<style>
+
+
+body{
+	background-color:#000;
+}
+.scalehalf{
+	-ms-transform: scale(.5,.5); /* IE 9 */
+    -webkit-transform: scale(.5,.5); /* Chrome, Safari, Opera */
+    transform: scale(.5,.5);
+}
+
+
+</style>
+
+
+<!--TWEETS-->
+<link href="socialtweet.css" rel="stylesheet" type="text/css" />
+
+<link href="wiggle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<!--SCENE 6 START-->
+<div name="scene6holder" class="viewport" style="width:300px;height:300px;overflow:hidden">
+<div class="viewport scalehalf" id="scene6" style="top:-200px;left:-200px;width:977px;height:593px;overflow:hidden" name="scene6">
+<div id="bg1" class="scene_bg">
+  <img src="bg/csuite_floor.png" width="977" height="593" /> </div>
+<!--SCENE 6 Inside-->
+
+
+
+<!--STEVE -->
+<div class="characterholder" id="beth_holder" style="top:150px;left:0px;"> 
+
+<div id="stevebody" style="top:0px; left:0px" class="character_part">
+    <img src="img-ani/steve.png" width="340" height="320" alt=""/> 
+    </div>
+         
+<!--HEAD -->
+  <div id="s6-steve_vp" class="viewport" style="top:75px; left:46px; width:15px; height:8px;"">
+		<div id="steveeyes" style="top:0px; left:-50px" class="character_part">
+        <img src="img-ani/stevesheet.png" width="150" height="300" alt=""/> 
+        </div>
+  </div>
+  <!--HEAD -->
+ <!--ARM -->
+  <div id="s6-arm_vp" class="viewport" style="top:67px; left:100px; width:28px; height:45px;"">
+		<div id="stevearm" style="top:0px; left:0px" class="character_part">
+        <img src="img-ani/stevesheet.png" width="150" height="300" alt=""/> 
+        </div>
+  </div>
+  <!--ARM -->
+   <!--SHOE2 -->
+  <div id="s6-shoe2_vp" class="viewport" style="top:205px; left:325px; width:15px; height:27px;"">
+		<div id="shoe2" style="top:0px; left:-75px" class="character_part">
+        <img src="img-ani/stevesheet.png" width="150" height="300" alt=""/> 
+        </div>
+  </div>
+  <!--SHOE2 -->
+  
+   <!--SHOE1 -->
+  <div id="s6-shoe1_vp" class="viewport" style="top:223px; left:335px; width:15px; height:27px;"">
+		<div id="shoe1" style="top:0px; left:-75px" class="character_part">
+        <img src="img-ani/stevesheet.png" width="150" height="300" alt=""/> 
+        </div>
+  </div>
+  <!--SHOE1 -->
+  
+  
+  
+</div>
+<!--STEVE END-->
+
+
+ <!--DESK MASK -->
+
+		<div id="deskmask6" style="top:456px; left: 80px" class="character_part">
+        <img src="img-ani/deskmask6.png" width="70" height="16" alt=""/> </div>
+
+  <!--DESK MASK -->
+  
+
+
+   
+   
+   <!--PHONE 6 START-->
+    <div id="c-phone6-vp" class="viewport" style="top:510px; left:30px; width:82px; height:52px;"">
+		<div id="phone6" style="top:0px; left:0px" class="character_part" onclick="showhide('socialviewporttext','visible')">
+          <img src="img-ani/c-phone.png" width="82" height="210" />  
+      </div>
+    </div>
+<!--PHONE 6 END-->
+
+<!--TWEET 1 START-->
+<div id="socialviewporttext" style="top:290px; left:30px;" onclick="showhide('socialviewporttext','hidden')";>
+   <div id="socialbubble">
+   <img src="img-ani/bubble.png" width="256" height="175" /> </div>
+  <div id="socialtext" style="top:40px;left:20px;">
+
+  </div>
+</div>
+<!--TWEET 1 END-->
+
+
+<!--SCENE 6 Inside END-->
+</div>
+</div>
+<!--SCENE 6 END-->
+
+
+
+
+
+
+
+<!--ANIMATION ENGINE-->
+<script src="http://dev2.djcontentlab.com/html_widget/wiggleit/wiggleit5-min.js"></script>
+
+<!--ANIMATION CLIPS-->
+<script src="scene6.js"></script> 
+
+<!--ANIMATION Variables-->
+<script>
+
+var maxtime = 0;
+var anitick = .05;
+
+aniscene("scene6");//call scene to play
+startani();//start animation
+//startanit();//start animation
+</script>
+
+<!--tweets-->
+<script src="socialtweet.js"></script> 
+
+</body>
+</html>

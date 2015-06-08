@@ -1,0 +1,1163 @@
+<!doctype html>
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
+
+
+<title>sas mobile</title>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.1/TweenMax.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.1/plugins/CSSPlugin.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.1/plugins/AttrPlugin.min.js"></script>
+
+
+<style>
+body{
+	margin:0px;
+	
+}
+#graphicholder{
+	position:absolute;
+	width:298px;
+	height:285px;
+	border: solid 1px #000;
+	
+	overflow:hidden;
+	background-color:#0091af;
+	background-image:url(img/bg.png);
+	
+	
+}
+#footer{
+	position:absolute;
+	width:298px;
+	height:10px;
+	top:294px;
+	font-family:sans-serif;
+	font-size:10px;
+	color:#62089E;
+	text-align:justify;
+
+	text-transform:uppercase;
+	
+}
+
+
+.intro{
+	position:absolute;
+	width:300px;
+	height:300px;
+	
+}
+
+.assets{
+	position:absolute;
+	
+	
+	
+}
+.scalehalf{
+	-ms-transform: scale(.5,.5); /* IE 9 */
+    -webkit-transform: scale(.5,.5); /* Chrome, Safari, Opera */
+    transform: scale(.5,.5);
+}
+
+</style>
+<link href="scene.css" rel="stylesheet" type="text/css">
+<link href="socialtweet.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="graphicholder">
+
+<div id="main_vp" class="viewport" style="top:0px; left:0px; width:300px; height:285px;">
+  <div id="introscene1" class="intro" style="top:0px; left:0px; width:300px; height:285px;">
+     <div id="clouds1" class="assets" style="top:100px;left:0px;">
+      <img src="img/clouds.png" width="131" height="91" alt=""/> 
+  	</div>
+  <div id="clouds2" class="assets" style="top:300px;left:100px;">
+      <img src="img/clouds.png" width="131" height="91" alt=""/> 
+  </div>
+  
+  <!--BUILDING 1 START-->
+  <div class="characterholder" id="buildingholder" style="top:0px; left:100px">
+   <div id="building" class="assets" style="top:0px;left:0px;">
+       <div id="cloud4" style="top:100px; left:-100px" class="character_part">
+   	       <img src="img/cloudsmall.png" width="100" height="69" alt=""/> 
+    </div>
+    <div id="cloud3" style="top:0px; left:0px" class="character_part">
+   	       <img src="img/cloudsmall.png" width="100" height="69" alt=""/> 
+     </div>
+     
+     <div id="cloud5" style="top:50px; left:40px" class="character_part">
+        <img src="img/clouds2.png" width="150" height="104" alt=""/> 
+        </div>
+        
+        <div id="cloud6" style="top:160px; left:80px" class="character_part">
+        <img src="img/clouds2.png" width="180" height="134" alt=""/> 
+        </div>
+        
+        <!--BUILDING-->
+     <div id="building_vp" class="viewport" style="top:0px; left:-103px; width:600px; height:900px;">
+     <div id="buildingasset" style="top:0px; left:0px" class="character_part">
+       <img src="img/building-block.png" width="400" height="690" alt=""/> </div>
+       </div>
+        <!--  ANNE WALK-->
+   <div class="characterholder" id="buildingholder" style="top:620px; left:0px">
+    <div id="anne_vp" class="viewport" style="top:0px; left:0px; width:33px; height:75px;">
+  		<div id="anne" style="top:0px; left:0px" class="character_part characteropacity">
+      	  <img src="img/anne.png" width="35" height="400" alt=""/> 
+         </div>
+  	</div>
+ </div>
+ <!--  ANNE WALK-->
+ 
+ <!--  ALAN WALK-->
+   <div class="characterholder" id="buildingholder" style="top:620px; left:15px">
+    <div id="alan_vp" class="viewport" style="top:0px; left:0px; width:33px; height:75px;">
+  		<div id="alan" style="top:0px; left:0px" class="character_part characteropacity">
+      	  <img src="img/alan.png" width="32" height="67" alt=""/> 
+          </div>
+  	</div>
+ </div>
+ <!--  ALAN WALK-->
+ 
+ 
+    	<!--BUILDING-->
+        
+     <div id="sock_vp" class="viewport" style="top:10px; left:94px; width:175px; height:50px;">
+  		<div id="sock" style="top:0px; left:0px" class="character_part">
+      	  <img src="img/sock2.png" width="90" height="612" alt=""/></div>
+  	</div>
+  	<div id="redflag_vp" class="viewport" style="top:0px; left:92px; width:42px; height:20px;">
+   		<div id="redflag" style="top:0px; left:0px" class="character_part">
+      	<img src="img/redflag.png" width="30" height="175" alt=""/> 
+    	</div>
+    </div>
+     		
+     
+ 	
+   
+    
+  </div>   
+  <div id="title1" style="top:0px; left:-100px" class="character_part">
+      	  <img  src="img/eightways.png" width="299" height="155" alt=""/> 
+       </div>
+  </div>
+  
+   <div id="logos" style="top:202px; left:172px" class="character_part">
+      <img src="img/logos.png" width="110" height="80" alt=""/> 
+   </div>
+   
+  </div>
+ <!--BUILDING 1 END-->
+ <!--END INTRO -->
+ 
+ 
+ 
+<!--SCENE 1 START-->
+<div id="scene1" name="scene1" class="viewport" style="top:-1000px;width:300px;height:300px">
+
+<!--SCENE 1 START-->
+<div name="scene1holder" class="viewport" style="width:300px;height:300px;overflow:hidden">
+<div name="scene1" class="viewport scalehalf" style="top:-150px;left:-245px;width:977px;height:598px">
+<div id="bg1" class="scene_bg">
+  <img src="bg/scene1_bg.png" width="600" height="600"  alt=""/> 
+  </div>
+<!--SCENE 1 Inside-->
+
+<!--BETH -->
+<div class="characterholder" id="beth_holder" style="top:160px;left:0px;">
+ <!--BETH LEG -->
+  <div id="beth-leg-vp" class="viewport" style="top:180px; left:40px; width:60px; height:124px;"">
+  	<div id="beth-leg" style="top:0px; left:-164px" class="character_part">
+        <img src="img-ani/beth2.png" width="200" height="330" /> 
+    </div>
+  </div>
+<!--BETH LEG-->
+<!--BETH BODY-->
+  <div id="beth" class="viewport" style="top:0px; left:0px; width:100px; height:330px;"">
+        <img src="img-ani/beth2.png" width="200" height="330" /> 
+  </div>
+  <!--BETH BODY-->
+  <!--BETH ARM -->
+  <div id="beth-arm-vp" class="viewport" style="top:-10px; left:88px; width:60px; height:80px;"">
+  	<div id="beth-arm" style="top:0px; left:-100px" class="character_part">
+        <img src="img-ani/beth2.png" width="200" height="330" /> 
+    </div>
+  </div>
+ <!--BETH ARM-->
+ 
+  <!--BETH EYES -->
+  <div id="beth-eyes-vp" class="viewport" style="top:16px; left:36px; width:80px; height:4px;"">
+  	<div id="beth-eyes" style="top:-310px; left:-160px" class="character_part">
+        <img src="img-ani/beth2.png" width="200" height="330" /> 
+    </div>
+  </div>
+ <!--BETH EYES-->
+
+ 
+
+</div>
+  <!--BETH -->
+  
+  
+  <!--STAN -->
+<div class="characterholder" id="stan_holder" style="top:450px;left:500px;">
+ <!--STAN HEAD -->
+  <div id="stan-head-vp" class="viewport" style="top:-62px; left:40px; width:80px; height:70px;"">
+  	<div id="stan-head" style="top:-140px; left:0px" class="character_part">
+      <img src="img-ani/stan3.png" width="330" height="600" /> 
+      </div>
+  </div>
+ <!--STAN HEAD-->
+<!--STAN BODY-->
+  <div id="stan" class="viewport" style="top:0px; left:0px; width:150px; height:160px;"">
+        <img src="img-ani/stan3.png" width="330" height="600" /> 
+  </div>
+  <!--STAN BODY-->
+  <!--STAN ARM -->
+  <div id="stan-arm-vp" class="viewport" style="top:-30px; left:-134px; width:200px; height:120px;"">
+  	<div id="stan-arm" style="top:0px; left:-170px" class="character_part">
+      <img src="img-ani/stan3.png" width="330" height="600" /> 
+      </div>
+  </div>
+ <!--STAN ARM-->
+ 
+ 
+</div>
+  <!--STAN -->
+  
+<!--LOGO-->
+<div class="logospace">
+  <img src="img-ani/logo_finance.png" width="62" height="48"  alt=""/> 
+ </div>
+ <!--LOGO-->
+ 
+  
+  <!--POINTER 1 -->
+<div id="pointernum1-vp" class="viewport" style="top:140px; left:170px; width:72px; height:117px;"">
+		<div id="p-pointernum1" style="top:0px; left:0px" class="character_part">
+      <img src="img-ani/num_arrows.png" width="750" height="2400"/> 
+      </div>
+  </div>
+   <!--POINTER 1 END-->
+   
+     <!--POINTER 2 -->
+<div id="pointernum2-vp" class="viewport" style="top:350px; left:300px; width:72px; height:117px;"">
+		<div id="p-pointernum2" style="top:0px; left:-75px" class="character_part">
+      <img src="img-ani/num_arrows.png" width="750" height="2400"/> 
+       </div>
+  </div>
+   <!--POINTER 2 END-->
+   
+    
+    <!--FACT 1 -->
+<div id="fact1-vp" class="viewport" style="top:280px; left:150px; width:42px; height:72px;"">
+		<div id="fact1" style="top:0px; left:0px" class="character_part">
+      <img src="img-ani/pointersblue.png" width="270" height="1417" /> 
+      </div>
+  </div>
+   <!--FACT  1 END-->
+   
+    <!--FACT 2 -->
+<div id="fact2-vp" class="viewport" style="top:360px; left:400px; width:42px; height:72px;"">
+		<div id="fact2" style="top:0px; left:0px" class="character_part">
+      <img src="img-ani/pointersblue.png" width="270" height="1417" />  
+      </div>
+  </div>
+   <!--FACT  2 END-->
+   
+   
+   <!--PHONE 1 START-->
+    <div id="s1-phone-vp" class="viewport" style="top:480px; left:130px; width:55px; height:35px;"">
+		<div id="s1-phone" style="top:0px; left:0px" class="character_part">
+          <img src="img-ani/c-phone.png" width="55" height="140" />  
+      </div>
+    </div>
+<!--PHONE 1 END-->
+
+<!--TWEET 1 START-->
+<div id="socialviewporttext1" class="viewport" style="top:200px; left:100px;">
+   <div id="socialbubble1" style="top:0px; left:0px">
+   
+     <img src="img-ani/socialbubble.png" width="352" height="258"> 
+     </div>
+  <div id="socialtext1" class="socialtext" style="top:60px;left:40px;">
+
+  </div>
+</div>
+<!--TWEET 1 END-->
+<!--FLAG 1 -->
+<div id="flag1" style="top:-1000px; left:0px" class="character_part">
+  <img src="img/point1.png" width="600" height="600" alt=""/> 
+</div>
+<!--FLAG 1 -->
+<!--FLAG 2 -->
+<div id="flag2" style="top:-1000px; left:0px" class="character_part">
+  <img src="img/point2.png" width="600" height="600" alt=""/> 
+</div>
+<!--FLAG 2 -->
+
+<!--FACTFLAG 1 -->
+<div id="factflag1" style="top:-1000px; left:0px" class="character_part">
+  <img src="img/fact1.png" width="600" height="600" alt=""/> 
+</div>
+<!--FACTFLAG 1 -->
+<!--FACTFLAG 2 -->
+<div id="factflag2" style="top:-1000px; left:0px" class="character_part">
+  <img src="img/fact2.png" width="600" height="600" alt=""/> 
+</div>
+<!--FACTFLAG 2 -->
+
+
+<!--SCENE 1 Inside END-->
+</div>
+</div>
+<!--SCENE 1 END-->
+
+
+
+</div>
+<!--SCENE 1 END-->
+
+<!--SCENE 2 START-->
+<div id="scene2" name="scene2" class="viewport" style="top:-1000px;width:300px;height:300px">
+<!--SCENE 2 START-->
+<div name="scene2holder" class="viewport" style="width:300px;height:300px;overflow:hidden">
+<div name="scene2" class="viewport scalehalf" style="top:-150px;left:-245px;width:977px;height:598px">
+<div id="bg1" class="scene_bg">
+  <img src="bg/scene2_bg.png" width="600" height="600"  alt=""/> 
+  </div>
+<!--SCENE 2 Inside-->
+
+
+
+<!--JANE -->
+<div class="characterholder" id="beth_holder" style="top:100px;left:50px;"> 
+
+<div id="janvebody" style="top:0px; left:0px" class="character_part">
+    <img src="img-ani/jane.png" width="140" height="500" /> </div>
+         
+<!--HEAD -->
+  <div id="s2-jane_vp" class="viewport" style="top:-90px; left:-10px; width:105px; height:131px;"">
+		<div id="janehead" style="top:0px; left:0px" class="character_part">
+        <img src="img-ani/janehead.png" width="105" height="550" /> 
+        </div>
+  </div>
+  <!--HEAD -->
+ <!--ARM -->
+  <div id="s2-arm_vp" class="viewport" style="top:67px; left:-20px; width:150px; height:169px;"">
+		<div id="janearm" style="top:0px; left:0px" class="character_part">
+        <img src="img-ani/janearm.png" width="150" height="750" /> 
+        </div>
+  </div>
+  <!--ARM -->
+</div>
+<!--JANE END-->
+
+
+ <!--DESK MASK -->
+
+		<div id="deskmask" style="top:520px; left: 60px" class="character_part">
+        <img src="bg/marketing_floor_deskmask.png" width="150" height="86" /> 
+        </div>
+
+  <!--DESK MASK -->
+  
+
+
+ <!--MONITOR -->
+  <div id="monitor-vp" class="viewport" style="top:30px; left:240px; width:300px; height:358px;"">
+		<div id="monitor" style="top:0px; left:0px" class="character_part" onclick="removeani('monitor-hover')">
+        <img src="img-ani/monitor.png" width="300" height="2900" /> </div>
+  </div>
+  <!--MONITOR -->
+  
+    <!--POINTER 3 -->
+<div id="pointernum3-vp" class="viewport" style="top:440px; left:325px; width:72px; height:117px;"">
+		<div id="p-pointernum3" style="top:0px; left:-150px" class="character_part">
+       <img src="img-ani/num_arrows.png" width="750" height="2400"/> 
+    </div>
+  </div>
+   <!--POINTER 3 END-->
+   
+     <!--POINTER 4 -->
+<div id="pointernum4-vp" class="viewport" style="top:340px; left:425px; width:72px; height:117px;"">
+		<div id="p-pointernum4" style="top:0px; left:-225px" class="character_part">
+       <img src="img-ani/num_arrows.png" width="750" height="2400"/> 
+        </div>
+  </div>
+   <!--POINTER 4 END-->
+    
+    <!--FACT3 -->
+<div id="fact3-vp" class="viewport" style="top:450px; left:135px; width:42px; height:72px;"">
+		<div id="fact3" style="top:0px; left:0px" class="character_part">
+      <img src="img-ani/pointersblue.png" width="270" height="1417" /> 
+      </div>
+  </div>
+   <!--FACT  3 END-->
+   
+    <!--FACT 4 -->
+<div id="fact4-vp" class="viewport" style="top:160px; left:500px; width:42px; height:72px;"">
+		<div id="fact4" style="top:0px; left:0px" class="character_part">
+      <img src="img-ani/pointersblue.png" width="270" height="1417" />  
+      </div>
+  </div>
+   <!--FACT  4 END-->
+   
+   <!--PHONE 2 START-->
+    <div id="c-phone2-vp" class="viewport" style="top:520px; left:180px; width:82px; height:52px;"">
+		<div id="c-phone2" style="top:0px; left:0px" class="character_part" onclick="showhide('socialviewporttext2','visible')">
+          <img src="img-ani/c-phone.png" width="82" height="210" />  
+      </div>
+    </div>
+<!--PHONE 2 END-->
+
+
+<!--TWEET 2 START-->
+<div id="socialviewporttext2" class="viewport" style="top:200px; left:100px;">
+   <div id="socialbubble2" style="top:0px; left:0px">
+   
+     <img src="img-ani/socialbubble.png" width="352" height="258"> 
+     </div>
+  <div id="socialtext2" class="socialtext" style="top:60px;left:40px;">
+
+  </div>
+</div>
+<!--TWEET 2 END-->
+<!--FLAG 3 -->
+<div id="flag3" style="top:-1000px; left:0px" class="character_part">
+  <img src="img/point3.png" width="600" height="600" alt=""/> 
+</div>
+<!--FLAG 3 -->
+<!--FLAG 4 -->
+<div id="flag4" style="top:-1000px; left:0px" class="character_part">
+  <img src="img/point4.png" width="600" height="600" alt=""/> 
+</div>
+<!--FLAG 4 -->
+
+<!--FACTFLAG 3 -->
+<div id="factflag3" style="top:-1000px; left:0px" class="character_part">
+  <img src="img/fact3.png" width="600" height="600" alt=""/> 
+</div>
+<!--FACTFLAG 3 -->
+<!--FACTFLAG 4 -->
+<div id="factflag4" style="top:-1000px; left:0px" class="character_part">
+  <img src="img/fact4.png" width="600" height="600" alt=""/> 
+</div>
+<!--FACTFLAG 4 -->
+<!--BOUNUS 2 -->
+<div id="bonus2" style="top:-1000px; left:0px" class="character_part">
+  <img src="img/bonus2.png" width="600" height="600" alt=""/>
+  </div>
+<!--BOUNUS 2 -->
+
+<!--SCENE 2 Inside END-->
+</div>
+</div>
+<!--SCENE 2 END-->
+
+
+</div>
+<!--SCENE 2 END-->
+
+
+<!--SCENE 3 START-->
+<div id="scene3" name="scene3" class="viewport" style="top:-1000px;width:300px;height:300px">
+<!--SCENE 3 START-->
+<div name="scene3holder" class="viewport" style="width:300px;height:300px;overflow:hidden">
+<div name="scene3" class="viewport scalehalf" style="top:-150px;left:-280px;width:977px;height:593px;overflow:hidden">
+<div id="bg1" class="scene_bg">
+  <img src="bg/it_floor.png" width="977" height="593" /> </div>
+<!--SCENE 4 Inside-->
+
+
+
+<!--ITGUY -->
+<div class="characterholder" id="beth_holder" style="top:200px;left:440px;"> 
+
+<!--HEAD -->
+  <div id="s3-it_vp" class="viewport" style="top:-48px; left:10px; width:50px; height:59px;"">
+		<div id="ithead" style="top:0px; left:0px" class="character_part">
+        <img src="img-ani/ithead.png" width="50" height="850" /> 
+        </div>
+  </div>
+  <!--HEAD -->
+  
+<div id="itguy" style="top:0px; left:0px" class="character_part">
+    <img src="img-ani/itguy.png" width="111" height="315" /> </div>
+         
+
+ <!--ARM -->
+  <div id="s3-arm_vp" class="viewport" style="top:-15px; left:-120px; width:150px; height:80px;"">
+		<div id="itarm" style="top:0px; left:0px" class="character_part">
+        <img src="img-ani/itarm.png" width="150" height="600" /> 
+        
+        </div>
+  </div>
+  <!--ARM -->
+</div>
+<!--ITGUY END-->
+
+
+
+
+ <!--SOCKS -->
+  <div id="socks_vp" class="viewport" style="top:440px; left:430px; width:150px; height:110px;"">
+		<div id="itsocks" style="top:0px; left:0px" class="character_part">
+        <img src="img-ani/itsocks.png" width="150" height="900" /> 
+        </div>
+  </div>
+  <!--SOCKS -->
+  
+    <!--POINTER 5 -->
+<div id="pointernum5-vp" class="viewport" style="top:350px; left:90px; width:73px; height:117px;"">
+		<div id="p-pointernum5" style="top:0px; left:-300px" class="character_part">
+      <img src="img-ani/num_arrows.png" width="750" height="2400"/> 
+    </div>
+  </div>
+   <!--POINTER 5 END-->
+   
+     <!--POINTER 6 -->
+<div id="pointernum6-vp" class="viewport" style="top:110px; left:550px; width:72px; height:117px;"">
+		<div id="p-pointernum6" style="top:0px; left:-375px" class="character_part">
+       <img src="img-ani/num_arrows.png" width="750" height="2400"/> 
+       </div>
+  </div>
+   <!--POINTER 6 END-->
+    
+    <!--FACT 5 -->
+<div id="fact5-vp" class="viewport" style="top:100px; left:150px; width:42px; height:72px;"">
+		<div id="fact5" style="top:0px; left:0px" class="character_part">
+      <img src="img-ani/pointersblue.png" width="270" height="1417" /> 
+      </div>
+  </div>
+   <!--FACT  5 END-->
+   
+    <!--FACT 6 -->
+<div id="fact6-vp" class="viewport" style="top:360px; left:350px; width:42px; height:72px;"">
+		<div id="fact6" style="top:0px; left:0px" class="character_part">
+      <img src="img-ani/pointersblue.png" width="270" height="1417" />  
+      </div>
+  </div>
+   <!--FACT  6 END-->
+   
+   <!--PHONE 1 START-->
+    <div id="c-phone3-vp" class="viewport" style="top:460px; left:200px; width:82px; height:35px;"">
+		<div id="c-phone3" style="top:0px; left:0px" class="character_part" onclick="showhide('socialviewporttext3','visible')">
+          <img src="img-ani/c-phone.png" width="55" height="140" />  
+      </div>
+    </div>
+<!--PHONE 1 END-->
+
+
+<!--TWEET 3 START-->
+<div id="socialviewporttext3" class="viewport" style="top:290px; left:140px;">
+   <div id="socialbubble3" style="top:0px; left:0px">
+   
+     <img src="img-ani/socialbubble.png" width="352" height="258"> 
+     </div>
+  <div id="socialtext3" class="socialtext" style="top:60px;left:40px;">
+
+  </div>
+</div>
+<!--TWEET 3 END-->
+<!--FLAG 5 -->
+<div id="flag5" style="top:-1000px; left:70px" class="character_part">
+  <img src="img/point5.png" width="600" height="600" alt=""/> 
+</div>
+<!--FLAG 5 -->
+<!--FLAG 6 -->
+<div id="flag6" style="top:-1000px; left:70px" class="character_part">
+  <img src="img/point6.png" width="600" height="600" alt=""/> 
+</div>
+<!--FLAG 6 -->
+
+<!--FACTFLAG 5 -->
+<div id="factflag5" style="top:-1000px; left:70px" class="character_part">
+  <img src="img/fact5.png" width="600" height="600" alt=""/> 
+</div>
+<!--FACTFLAG 5 -->
+<!--FACTFLAG 6 -->
+<div id="factflag6" style="top:-1000px; left:70px" class="character_part">
+  <img src="img/fact6.png" width="600" height="600" alt=""/> 
+</div>
+<!--FACTFLAG 6 -->
+<!--BOUNUS 3 -->
+<div id="bonus3" style="top:-1000px; left:70px" class="character_part">
+  <img src="img/bonus4.png" width="600" height="600" alt=""/>
+  </div>
+<!--BOUNUS 3 -->
+
+
+<!--SCENE 3 Inside END-->
+</div>
+</div>
+<!--SCENE 3 END-->
+</div>
+<!--SCENE 3 END-->
+
+
+
+
+  <!--SCENE 4 START-->
+<div id="scene4" name="scene4" class="viewport" style="top:-1000px;width:300px;height:300px">
+
+<div name="scene4holder" class="viewport" style="width:300px;height:300px;overflow:hidden">
+<div name="scene1" class="viewport scalehalf" style="top:-150px;left:-250px;width:977px;height:598px">
+<div id="bg1" class="scene_bg">
+  <img src="bg/hr_floor.png" width="977" height="598" /> 
+  </div>
+  <!--SCENE 4 Inside-->
+
+<!--HEAD -->
+  <div id="s4-cindyhead-vp" class="viewport" style="top:135px; left:348px; width:200px; height:74px;"">
+		<div id="cindyhead" style="top:0px; left:0px" class="character_part">
+        <img src="img-ani/cindy-head.png" width="50" height="400" /> 
+        </div>
+  </div>
+  <!--HEAD -->
+
+ <!--BOOK -->
+  <div id="s4-book-vp" class="viewport" style="top:360px; left:180px; width:200px; height:150px;"">
+		<div id="book" style="top:0px; left:0px" class="character_part">
+        <img src="img-ani/book.png" width="200" height="3600" /> </div>
+  </div>
+  <!--BOOK -->
+  
+  <!--POINTER 7 -->
+<div id="pointernum7-vp" class="viewport" style="top:100px; left:115px; width:72px; height:117px;"">
+		<div id="p-pointernum7" style="top:0px; left:-450px" class="character_part">
+      <img src="img-ani/num_arrows.png" width="750" height="2400"/> 
+      </div>
+  </div>
+   <!--POINTER 7 END-->
+   
+     <!--POINTER 8 -->
+<div id="pointernum8-vp" class="viewport" style="top:300px; left:500px; width:72px; height:117px;">
+		<div id="p-pointernum8" style="top:0px; left:-525px" class="character_part">
+      <img src="img-ani/num_arrows.png" width="750" height="2400"/> 
+       </div>
+  </div>
+   <!--POINTER 8 END-->
+   
+   
+    <!--FACT 7 -->
+<div id="fact7-vp" class="viewport" style="top:500px; left:90px; width:42px; height:72px;"">
+		<div id="fact7" style="top:0px; left:0px" class="character_part">
+      <img src="img-ani/pointersblue.png" width="270" height="1417" /> 
+      </div>
+  </div>
+   <!--FACT  7 END-->
+   
+    <!--FACT 8 -->
+<div id="fact8-vp" class="viewport" style="top:160px; left:500px; width:42px; height:72px;"">
+		<div id="fact8" style="top:0px; left:0px" class="character_part">
+      <img src="img-ani/pointersblue.png" width="270" height="1417" />  
+      </div>
+  </div>
+   <!--FACT  8 END-->
+   
+   
+   <div id="dots1_vp" class="viewport" style="top:305px; left:6px; width:30px; height:28px;">
+   <div id="dot1" style="top:-28px; left:0px" class="character_part">
+       <img src="img/dots.png" width="300" height="55" alt=""/> 
+    </div>
+  </div>
+  
+
+
+   <!--PHONE 4 START-->
+    <div id="c-phone4-vp" class="viewport" style="top:450px; left:400px; width:55px; height:35px;"">
+		<div id="c-phone4" style="top:0px; left:0px" class="character_part">
+          <img src="img-ani/c-phone.png" width="55" height="140" />  
+      </div>
+    </div>
+<!--PHONE 4 END-->
+
+<!--TWEET 4 START-->
+<div id="socialviewporttext4" class="viewport" style="top:200px; left:140px;">
+   <div id="socialbubble4" style="top:0px; left:0px">
+   
+     <img src="img-ani/socialbubbleflip.png" width="352" height="258"> 
+     </div>
+  <div id="socialtext4" class="socialtext" style="top:60px;left:40px;">
+
+  </div>
+</div>
+<!--TWEET 4 END-->
+<!--FLAG 7 -->
+<div id="flag7" style="top:-1000px; left:10px" class="character_part">
+  <img src="img/point7.png" width="600" height="600" alt=""/> 
+</div>
+<!--FLAG 7 -->
+<!--FLAG 8 -->
+<div id="flag8" style="top:-1000px; left:10px" class="character_part">
+  <img src="img/point8.png" width="600" height="600" alt=""/> 
+</div>
+<!--FLAG 8 -->
+
+<!--FACTFLAG 7 -->
+<div id="factflag7" style="top:-1000px; left:10px" class="character_part">
+  <img src="img/fact7.png" width="600" height="600" alt=""/> 
+</div>
+<!--FACTFLAG 7 -->
+<!--FACTFLAG 8 -->
+<div id="factflag8" style="top:-1000px; left:10px" class="character_part">
+  <img src="img/fact8.png" width="600" height="600" alt=""/> 
+</div>
+<!--FACTFLAG 8 -->
+<!--BOUNUS 4 -->
+<div id="bonus4" style="top:-1000px; left:10px" class="character_part">
+  <img src="img/bonus4.png" width="600" height="600" alt=""/>
+  </div>
+<!--BOUNUS 8 -->
+
+<!--SCENE 4 Inside-->
+</div>
+ </div>
+</div>
+<!--SCENE 4 END-->
+ 
+ 
+ <!--SCENE 5 START-->
+<div id="scene5" name="scene5" class="viewport" style="top:-1000px;width:300px;height:300px">
+<!--SCENE 5 START-->
+<div name="scene5holder" class="viewport" style="width:300px;height:300px;overflow:hidden">
+<div name="scene5" class="viewport scalehalf" style="top:-150px;left:-300px;width:977px;height:598px">
+<div id="bg5" class="scene_bg">
+  <img src="bg/retail_floor.png" width="977" height="593" /> 
+  </div>
+<!--BOB -->
+<div class="characterholder" id="bob_holder" style="top:180px;left:260px;"> 
+<!--HEAD -->
+  <div id="s6-bobhead_vp" class="viewport" style="top:-30px; left:15px; width:36px; height:39px;"">
+		<div id="bobhead" style="top:0px; left:-210px" class="character_part">
+        <img src="img-ani/bob.png" width="250" height="850" /> 
+        </div>
+  </div>
+  <!--HEAD -->
+  <!--BODY -->
+  <div id="s6-bobbody_vp" class="viewport" style="top:0px; left:0px; width:120px; height:225px;"">
+	<div id="bobbody" style="top:0px; left:-75px" class="character_part">
+    <img src="img-ani/bob.png" width="250" height="850" /> 
+	</div>
+  </div>   
+  <!--BODY -->
+<!--ARM -->
+  <div id="s6-bobarm_vp" class="viewport" style="top:-10px; left:-47px; width:65px; height:65px;"">
+		<div id="bobarm" style="top:0px; left:0px" class="character_part">
+        <img src="img-ani/bob.png" width="250" height="850" /> 
+        </div>
+  </div>
+  <!--ARM -->
+  
+</div>
+<!--BOB END-->
+
+<!--SHARON -->
+<div class="characterholder" id="sharon_holder" style="top:270px;left:500px;"> 
+
+<div id="sharonbody" style="top:0px; left:0px" class="character_part">
+    <img src="img-ani/sharonbody.png" width="250" height="500" /> </div>
+         
+<!--ARM -->
+  <div id="s6-sharon_vp" class="viewport" style="top:-30px; left:-50px; width:75px; height:100px;"">
+		<div id="sharonarm" style="top:0px; left:0px" class="character_part">
+        <img src="img-ani/sharonarm.png" width="75" height="500" /> 
+        </div>
+  </div>
+  <!--ARM -->
+  
+</div>
+<!--SHARON END-->
+<!--POINTER 5a -->
+<div id="pointer5a-vp" class="viewport" style="top:120px; left:120px; width:85px; height:142px;"">
+		<div id="pointer5a" style="top:0px; left:0px" class="character_part">
+      <img src="img-ani/pointers.png" width="540" height="2835" /> 
+      </div>
+  </div>
+   <!--POINTER 5a END-->
+   
+   <!--POINTER 5b -->
+<div id="pointer5b-vp" class="viewport" style="top:40px; left:300px; width:85px; height:142px;"">
+		<div id="pointer5b" style="top:0px; left:0px" class="character_part">
+      <img src="img-ani/pointers.png" width="540" height="2835" /> 
+      </div>
+  </div>
+   <!--POINTER 5a END-->
+   
+    <!--POINTER 5c -->
+<div id="pointer6c-vp" class="viewport" style="top:160px; left:340px; width:85px; height:142px;"">
+		<div id="pointer5c" style="top:0px; left:0px" class="character_part">
+      <img src="img-ani/pointers.png" width="540" height="2835" /> 
+      </div>
+  </div>
+   <!--POINTER 5c END-->
+   
+    <!--POINTER 5d -->
+<div id="pointer5d-vp" class="viewport" style="top:120px; left:420px; width:85px; height:142px;"">
+		<div id="pointer5d" style="top:0px; left:0px" class="character_part" >
+      <img src="img-ani/pointers.png" width="540" height="2835" /> 
+      </div>
+  </div>
+   <!--POINTER 5d END-->
+   
+    <!--POINTER 5e -->
+<div id="pointer5e-vp" class="viewport" style="top:370px; left:120px; width:85px; height:142px;"">
+		<div id="pointer5e" style="top:0px; left:0px" class="character_part">
+      <img src="img-ani/pointers.png" width="540" height="2835" /> 
+      </div>
+  </div>
+   <!--POINTER 5e END-->
+  
+  
+  
+<!--SCENE 5 Inside-->
+<!--retail1 -->
+<div id="retail1" style="top:-1000px; left:110px" class="character_part">
+  <img src="img/retail1.png" width="600" height="600" alt=""/> 
+</div>
+<!--retail1 -->
+<!--retail2 -->
+<div id="retail2" style="top:-1000px; left:110px" class="character_part">
+  <img src="img/retail2.png" width="600" height="600" alt=""/> 
+</div>
+<!--retail2 -->
+<!--retail3 -->
+<div id="retail3" style="top:-1000px; left:110px" class="character_part">
+  <img src="img/retail3.png" width="600" height="600" alt=""/> 
+</div>
+<!--retail3 -->
+<!--retail4 -->
+<div id="retail4" style="top:-1000px; left:110px" class="character_part">
+  <img src="img/retail4.png" width="600" height="600" alt=""/> 
+</div>
+<!--retail4 -->
+<!--retail5 -->
+<div id="retail5" style="top:-1000px; left:110px" class="character_part">
+  <img src="img/retail5.png" width="600" height="600" alt=""/> 
+</div>
+<!--retail5 -->
+
+
+<!--SCENE 1 Inside END-->
+</div>
+</div>
+<!--SCENE 1 END-->
+</div>
+<!--SCENE 5 END-->
+
+
+
+<!--SCENE 6 START-->
+<div id="scene6" name="scene6" class="viewport" style="top:-1000px;width:300px;height:300px">
+<!--SCENE 6 START-->
+<div name="scene6holder" class="viewport" style="width:300px;height:300px;overflow:hidden">
+<div class="viewport scalehalf" id="scene6" style="top:-150px;left:-250px;width:977px;height:593px;overflow:hidden" name="scene6">
+<div id="bg1" class="scene_bg">
+  <img src="bg/csuite_floor.png" width="977" height="593" /> </div>
+<!--SCENE 6 Inside-->
+
+
+
+<!--STEVE -->
+<div class="characterholder" id="beth_holder" style="top:150px;left:0px;"> 
+
+<div id="stevebody" style="top:0px; left:0px" class="character_part">
+    <img src="img-ani/steve.png" width="340" height="320" alt=""/> 
+    </div>
+         
+<!--HEAD -->
+  <div id="s6-steve_vp" class="viewport" style="top:75px; left:46px; width:15px; height:8px;"">
+		<div id="steveeyes" style="top:0px; left:-50px" class="character_part">
+        <img src="img-ani/stevesheet.png" width="150" height="300" alt=""/> 
+        </div>
+  </div>
+  <!--HEAD -->
+ <!--ARM -->
+  <div id="s6-arm_vp" class="viewport" style="top:67px; left:100px; width:28px; height:45px;"">
+		<div id="stevearm" style="top:0px; left:0px" class="character_part">
+        <img src="img-ani/stevesheet.png" width="150" height="300" alt=""/> 
+        </div>
+  </div>
+  <!--ARM -->
+   <!--SHOE2 -->
+  <div id="s6-shoe2_vp" class="viewport" style="top:205px; left:325px; width:15px; height:27px;"">
+		<div id="shoe2" style="top:0px; left:-75px" class="character_part">
+        <img src="img-ani/stevesheet.png" width="150" height="300" alt=""/> 
+        </div>
+  </div>
+  <!--SHOE2 -->
+  
+   <!--SHOE1 -->
+  <div id="s6-shoe1_vp" class="viewport" style="top:223px; left:335px; width:15px; height:27px;"">
+		<div id="shoe1" style="top:0px; left:-75px" class="character_part">
+        <img src="img-ani/stevesheet.png" width="150" height="300" alt=""/> 
+        </div>
+  </div>
+  <!--SHOE1 -->
+  
+  
+  
+</div>
+<!--STEVE END-->
+
+
+ <!--DESK MASK -->
+
+		<div id="deskmask6" style="top:456px; left: 80px" class="character_part">
+        <img src="img-ani/deskmask6.png" width="70" height="16" alt=""/> </div>
+
+  <!--DESK MASK -->
+  
+
+
+   
+   
+   <!--PHONE 6 START-->
+    <div id="s-phone6-vp" class="viewport" style="top:510px; left:30px; width:82px; height:52px;"">
+		<div id="s-phone6" style="top:0px; left:0px" class="character_part">
+          <img src="img-ani/c-phone.png" width="82" height="210" />  
+      </div>
+    </div>
+<!--PHONE 6 END-->
+
+<!--TWEET 6 START-->
+<div id="socialviewporttext6" class="viewport" style="top:200px; left:40px;">
+   <div id="socialbubble6" style="top:0px; left:0px">
+   
+     <img src="img-ani/socialbubble.png" width="352" height="258"> 
+     </div>
+  <div id="socialtext6" class="socialtext" style="top:60px;left:40px;">
+
+  </div>
+</div>
+<!--TWEET 4 END-->
+
+
+<!--SCENE 6 Inside END-->
+</div>
+</div>
+<!--SCENE 6 END-->
+</div>
+<!--SCENE 6 END-->
+<!--SOCIAL OUT-->
+<div id="socialout" style="left:223px;top:-1000px;" class="character_part">
+<!--social1-->
+ <div id="social_vp" class="viewport" style="top:0px; left:0px; width:30px; height:30px;">
+   <div id="social1" style="top:0px; left:0px" class="character_part">
+   <a href="https://twitter.com/intent/tweet?text=Smart sassy socks command business! &hashtags=8WaysBigDataDrivesGrowth learn the ways of the socks – http://on.wsj.com/" target="_blank">
+    <img src="img/socialout.png" width="90" height="30" border=0> 
+    </a>
+    </div>
+  </div>
+<!--dot1-->
+<!--dot2-->
+ <div id="social2_vp" class="viewport" style="top:0px; left:25px; width:30px; height:30px;">
+   <div id="social2" style="top:0px; left:-30px" class="character_part characteropacity">
+   <a href="http://www.facebook.com/sharer/sharer.php?u=wsj.com" target="_blank">
+        <img src="img/socialout.png" width="90" height="30" border=0>
+        </a> 
+    </div>
+  </div>
+<!--dot2-->
+<!--dot3-->
+ <div id="social3_vp" class="viewport" style="top:0px; left:48px; width:30px; height:30px;">
+   <div id="social3" style="top:0px; left:-60px" class="character_part characteropacity">
+   <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://wsj.com&amp;title=Smart Socks Command Business - 8 Ways Big Data Drive Growth;summary=SAS + CustomStudios, Sock Learning + 8 ways big data can drive growth and profitablility" target="_blank">
+        <img src="img/socialout.png" width="90" height="30" border=0> 
+        </a>
+    </div>
+  </div>
+<!--dot3-->
+</div>
+<!--SOCIAL OUT-->
+
+
+ <!--SCENE ELEVATOR DOORS -->
+<div id="elevatordoors" class="intro" style="top:-1000px; left:0px; width:300px; height:285px;">
+  <div id="doorleft" class="character_part" style="top:0px;left:-150px;">
+    <img src="img/edoor1.png" width="150" height="300" alt=""/> 
+   </div>
+   <div id="doorright" class="character_part" style="top:0px;left:300px;">
+    <img src="img/edoor2.png" width="150" height="300" alt=""/> 
+   </div>
+</div>
+ <!--SCENE ELEVATOR DOORS END -->
+
+<!--HELP BUTTON-->
+  <div id="helpbutton" style="top:3px; left:262px; visibility:hidden;" class="character_part buttonopacity">
+    <img src="img/buttonhelp1.png" width="33" height="33" alt=""/> </div>
+<!--HELP BUTTON--> 
+<!--REWIND BUTTON-->
+	<div id="rewindbutton_vp" class="viewport buttonopacity" style="top:4px; left:265px; width:32px; height:32px;">
+   		<div id="rewindbutton" style="top:0px; left:0px" class="character_part">
+   	    <img src="img/button_rewind.png" width="30" height="30" alt=""/> </div>
+ </div>
+   <!--REWIND BUTTON--> 
+   
+   <!--CLOUD BUTTON-->
+	<div id="cloudbutton_vp" class="viewport" style="top:0px; left:175px; width:50px; height:44px; visibility:hidden">
+   		<div id="cloudbutton" style="top:0px; left:0px" class="character_part">
+        <img src="img/cloudicon.png" width="70" height="800" alt=""/> </div>
+    </div>
+   <!--CLOUD BUTTON--> 
+   
+    <!--ELEVATOR BUTTON-->
+	<div id="buttonfloor_vp" class="viewport" style="top:2px; left:2px; width:50px; height:48px;">
+   		<div id="buttonfloor" style="top:0px; left:0px" class="character_part">
+        <img src="img/button_updown.png" width="30" height="30" alt=""/> 
+        </div>
+    </div>
+   <!--ELEVATOR BUTTON--> 
+   
+<!--START BUTTON-->
+	<div id="startbuttonvp" class="viewport" style="top:130px; left:102px; width:160px; height:58px;">
+   	
+        <div id="startbutton" style="top:0px; left:0px" class="character_part">
+   	    <img src="img/button1.png" width="140" height="600" alt=""/> 
+ 
+        </div>
+    </div>
+   <!--START BUTTON--> 
+   
+   <!--STORY BUTTON--> 
+  <div id="storycloud" style="top:20px; left:0px" class="character_part">
+   	   <img src="img/storycloud.png" width="290" height="290" alt=""/> 
+  </div>
+  <!--STORY BUTTON--> 
+  
+  <!--CIRCLE FLOOR NAV-->
+<div class="characterholder buttonopacity" id="circlebutton" style="top:-10px; left:35px">
+    <div id="circlefloor_vp" class="viewport" style="top:-5px; left:0px; width:230px; height:230px;">
+  		<div id="circlefloor" style="top:0px; left:0px" class="character_part characteropacity">
+        <img src="img/elevator_controls.png" width="232" height="216" alt=""/> </div>
+  	</div>
+    
+    
+	<div id="mb0" style="top:20px;left:0px; width:232px;height:28px" class="character_part cover"></div>
+	<div id="mb1" style="top:48px;left:0px; width:232px;height:28px" class="character_part cover"></div>
+	<div id="mb2" style="top:76px;left:0px; width:232px;height:34px" class="character_part cover"></div>
+	<div id="mb3" style="top:110px;left:0px; width:232px;height:34px" class="character_part cover"></div>
+	<div id="mb4" style="top:144px;left:0px; width:232px;height:34px" class="character_part cover"></div>
+	<div id="mb5" style="top:172px;left:0px; width:232px;height:28px" class="character_part cover"></div>
+
+ </div>
+ <!--CIRCLE FLOOR NAV-->
+    
+</div>
+
+
+
+</div>
+
+<!--FOOTER-->
+<div id="footer">
+<center>
+    8 Ways Big Data Can Drive Growth &amp; Profitability
+    </center>
+</div>
+    <!--FOOTER-->
+
+<!--DOTS-->
+<div id="dots_end" style="left:22px;top:3px; visibility:hidden;" class="character_part">
+<!--dot1-->
+ <div id="dots1_vp" class="viewport" style="top:305px; left:6px; width:30px; height:28px;">
+   <div id="dot1" style="top:-28px; left:0px" class="character_part">
+       <img src="img/dots.png" width="300" height="55" alt=""/> 
+    </div>
+  </div>
+<!--dot1-->
+<!--dot2-->
+ <div id="dots2_vp" class="viewport" style="top:305px; left:30px; width:34px; height:28px;">
+   <div id="dot2" style="top:-28px; left:-32px" class="character_part characteropacity">
+       <img src="img/dots.png" width="300" height="55" alt=""/> 
+    </div>
+  </div>
+<!--dot2-->
+<!--dot3-->
+ <div id="dots3_vp" class="viewport" style="top:305px; left:60px; width:34px; height:28px;">
+   <div id="dot3" style="top:-28px; left:-70px" class="character_part characteropacity">
+       <img src="img/dots.png" width="300" height="55" alt=""/> 
+    </div>
+  </div>
+<!--dot3-->
+<!--dot4-->
+ <div id="dots4_vp" class="viewport" style="top:305px; left:92px; width:34px; height:28px;">
+   <div id="dot4" style="top:-28px; left:-110px" class="character_part characteropacity">
+       <img src="img/dots.png" width="300" height="55" alt=""/> 
+    </div>
+  </div>
+<!--dot4-->
+<!--dot5-->
+ <div id="dots5_vp" class="viewport" style="top:305px; left:124px; width:34px; height:28px;">
+   <div id="dot5" style="top:-28px; left:-150px" class="character_part characteropacity">
+       <img src="img/dots.png" width="300" height="55" alt=""/> 
+    </div>
+  </div>
+<!--dot5-->
+<!--dot6-->
+ <div id="dots6_vp" class="viewport" style="top:305px; left:157px; width:34px; height:28px;">
+   <div id="dot6" style="top:-28px; left:-190px" class="character_part characteropacity">
+       <img src="img/dots.png" width="300" height="55" alt=""/> 
+    </div>
+  </div>
+<!--dot6-->
+<!--dot7-->
+ <div id="dots7_vp" class="viewport" style="top:305px; left:190px; width:34px; height:28px;">
+   <div id="dot7" style="top:-28px; left:-230px" class="character_part characteropacity">
+       <img src="img/dots.png" width="300" height="55" alt=""/> 
+    </div>
+  </div>
+<!--dot7-->
+<!--dot8-->
+ <div id="dots8_vp" class="viewport" style="top:305px; left:225px; width:34px; height:28px; ">
+   <div id="dot8" style="top:-28px; left:-270px" class="character_part characteropacity">
+       <img src="img/dots.png" width="300" height="55" alt=""/> 
+    </div>
+  </div>
+<!--dot8-->
+ </div>
+<!--DOTS-->
+
+
+
+<!--ANIMATION ENGINE-->
+<script src="wiggleit2.js"></script>
+<!--ANIMATION CLIPS-->
+<script src="mscene0.js"></script> 
+<script src="scene1.js"></script> 
+<script src="scene2.js"></script> 
+<script src="scene3.js"></script> 
+<script src="scene4.js"></script> 
+<script src="scene5.js"></script> 
+<script src="scene6.js"></script> 
+<!--ANIMATION Variables-->
+<script>
+var maxtime = 0;
+var anitick = .05;
+</script>
+
+<script src="socialtweet.js"></script>
+<script src="intro1.js"></script>
+<script src="elevator.js"></script>
+<script src="setscene.js"></script>
+<script src="manageclicks.js"></script>
+<script src="generalscripts.js"></script>
+
+
+<script>
+    init();
+   playscene("intro1");
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

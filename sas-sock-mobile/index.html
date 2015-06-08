@@ -1,0 +1,470 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sas</title>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.1/TweenMax.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.1/plugins/CSSPlugin.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.1/plugins/AttrPlugin.min.js"></script>
+
+
+<style>
+body{
+	
+}
+#graphicholder{
+	position:absolute;
+	width:298px;
+	height:285px;
+	border: solid 1px #000;
+	
+	overflow:hidden;
+	background-color:#0091af;
+	background-image:url(img/bg.png);
+	
+	
+}
+#footer{
+	position:absolute;
+	width:298px;
+	height:10px;
+	top:294px;
+	font-family:sans-serif;
+	font-size:10px;
+	color:#62089E;
+	text-align:justify;
+
+	text-transform:uppercase;
+	
+}
+
+
+.intro{
+	position:absolute;
+	width:300px;
+	height:300px;
+	
+}
+
+.assets{
+	position:absolute;
+	
+	
+	
+}
+
+</style>
+<link href="scene.css" rel="stylesheet" type="text/css">
+<link href="socialtweet.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="graphicholder">
+
+<div id="main_vp" class="viewport" style="top:0px; left:0px; width:300px; height:285px;">
+  <div id="introscene1" class="intro" style="top:0px; left:0px; width:300px; height:285px;">
+     <div id="clouds1" class="assets" style="top:100px;left:0px;">
+      <img src="img/clouds.png" width="131" height="91" alt=""/> 
+  	</div>
+  <div id="clouds2" class="assets" style="top:300px;left:100px;">
+      <img src="img/clouds.png" width="131" height="91" alt=""/> 
+  </div>
+  
+  <!--BUILDING 1 START-->
+  <div class="characterholder" id="buildingholder" style="top:0px; left:100px">
+   <div id="building" class="assets" style="top:0px;left:0px;">
+       <div id="cloud4" style="top:100px; left:-100px" class="character_part">
+   	       <img src="img/cloudsmall.png" width="100" height="69" alt=""/> 
+    </div>
+    <div id="cloud3" style="top:0px; left:0px" class="character_part">
+   	       <img src="img/cloudsmall.png" width="100" height="69" alt=""/> 
+     </div>
+     
+     <div id="cloud5" style="top:50px; left:40px" class="character_part">
+        <img src="img/clouds2.png" width="150" height="104" alt=""/> 
+        </div>
+        
+        <div id="cloud6" style="top:160px; left:80px" class="character_part">
+        <img src="img/clouds2.png" width="180" height="134" alt=""/> 
+        </div>
+        
+        <!--BUILDING-->
+     <div id="building_vp" class="viewport" style="top:0px; left:-103px; width:600px; height:900px;">
+     <div id="buildingasset" style="top:0px; left:0px" class="character_part">
+       <img src="img/building-block.png" width="400" height="690" alt=""/> </div>
+       </div>
+        <!--  ANNE WALK-->
+   <div class="characterholder" id="buildingholder" style="top:620px; left:0px">
+    <div id="anne_vp" class="viewport" style="top:0px; left:0px; width:33px; height:75px;">
+  		<div id="anne" style="top:0px; left:0px" class="character_part characteropacity">
+      	  <img src="img/anne.png" width="35" height="400" alt=""/> 
+         </div>
+  	</div>
+ </div>
+ <!--  ANNE WALK-->
+ 
+ <!--  ALAN WALK-->
+   <div class="characterholder" id="buildingholder" style="top:620px; left:15px">
+    <div id="alan_vp" class="viewport" style="top:0px; left:0px; width:33px; height:75px;">
+  		<div id="alan" style="top:0px; left:0px" class="character_part characteropacity">
+      	  <img src="img/alan.png" width="32" height="67" alt=""/> 
+          </div>
+  	</div>
+ </div>
+ <!--  ALAN WALK-->
+ 
+ 
+    	<!--BUILDING-->
+        
+     <div id="sock_vp" class="viewport" style="top:10px; left:94px; width:175px; height:50px;">
+  		<div id="sock" style="top:0px; left:0px" class="character_part">
+      	  <img src="img/sock2.png" width="90" height="612" alt=""/></div>
+  	</div>
+  	<div id="redflag_vp" class="viewport" style="top:0px; left:92px; width:42px; height:20px;">
+   		<div id="redflag" style="top:0px; left:0px" class="character_part">
+      	<img src="img/redflag.png" width="30" height="175" alt=""/> 
+    	</div>
+    </div>
+     		
+     
+ 	
+   
+    
+  </div>   
+  <div id="title1" style="top:0px; left:-100px" class="character_part">
+      	  <img  src="img/eightways.png" width="299" height="155" alt=""/> 
+       </div>
+  </div>
+  
+   <div id="logos" style="top:202px; left:172px" class="character_part">
+      <img src="img/logos.png" width="110" height="80" alt=""/> 
+   </div>
+   
+  </div>
+ <!--BUILDING 1 END-->
+ <!--END INTRO -->
+ 
+ 
+ 
+<!--SCENE 1 START-->
+<div id="scene1" name="scene1" class="viewport" style="top:-1000px;width:300px;height:300px">
+<div id="bg1" class="scene_bg">
+  <img src="bg/scene1.png" width="300" height="300" /> 
+  </div>
+<!--SCENE 1 Inside-->
+<!--SCENE 1 Inside END-->
+</div>
+<!--SCENE 1 END-->
+
+<!--SCENE 2 START-->
+<div id="scene2" name="scene2" class="viewport" style="top:-1000px;width:300px;height:300px">
+<div id="bg1" class="scene_bg">
+  <img src="bg/scene2.png" width="300" height="300" /> 
+  </div>
+<!--SCENE 2 Inside-->
+<!--SCENE 2 Inside END-->
+</div>
+<!--SCENE 2 END-->
+
+
+<!--SCENE 3 START-->
+<div id="scene3" name="scene3" class="viewport" style="top:-1000px;width:300px;height:300px">
+<div id="bg1" class="scene_bg">
+  <img src="bg/scene3.png" width="300" height="300" /> 
+  </div>
+<!--SCENE 3 Inside-->
+<!--SCENE 3 Inside END-->
+</div>
+<!--SCENE 3 END-->
+
+
+
+
+ <!--SCENE 4 START-->
+<div id="scene4" name="scene4" class="viewport" style="top:-1000px;width:300px;height:300px">
+<div id="bg1" class="scene_bg">
+  <img src="bg/hr_floor2.png" width="300" height="300" /> 
+  </div>
+<!--SCENE 4 Inside-->
+
+<!--HEAD -->
+  <div id="s4-cindyhead-vp" class="viewport" style="top:70px; left:150px; width:100px; height:36px;"">
+		<div id="cindyhead" style="top:0px; left:0px" class="character_part">
+        <img src="img/cindy-head.png" width="25" height="200" /> 
+        </div>
+  </div>
+  <!--HEAD -->
+
+ <!--BOOK -->
+  <div id="s4-book-vp" class="viewport" style="top:180px; left:65px; width:100px; height:75px;"">
+		<div id="book" style="top:0px; left:0px" class="character_part" onclick="removeani('book-hover');showsimplepx('bonus4','100');">
+        <img src="img/book.png" width="100" height="1800" /> </div>
+  </div>
+  <!--BOOK -->
+  
+  <!--POINTER 7 -->
+<div id="pointernum7-vp" class="viewport" style="top:80px; left:50px; width:100px; height:24px;"">
+		<div id="p-pointernum7" style="top:0px; left:-200px" class="character_part" onclick="removeani('pointernum7');showsimple('flag7');showsimplepx('dot7','0');">
+      <img src="img/num_arrows.png" width="250" height="800" /> 
+      
+      </div>
+  </div>
+   <!--POINTER 7 END-->
+   
+     <!--POINTER 8 -->
+<div id="pointernum8-vp" class="viewport" style="top:160px; left:240px; width:25px; height:39px;"">
+		<div id="p-pointernum8" style="top:0px; left:-175px" class="character_part" onclick="removeani('pointernum8');showsimple('flag8');showsimplepx('dot8','0');">
+      <img src="img/num_arrows.png" width="250" height="800" /> </div>
+  </div>
+   <!--POINTER 8 END-->
+   
+   <!--PHONE 1 START-->
+    <div id="c-phone-vp" class="viewport" style="top:220px; left:170px; width:30px; height:18px;"">
+		<div id="c-phone" style="top:0px; left:0px" class="character_part" onclick="showhide('socialviewporttext','visible')">
+          <img src="img/c-phone.png" width="27" height="70" />  
+      </div>
+    </div>
+<!--PHONE 1 END-->
+
+<!--TWEET 1 START-->
+<div id="socialviewporttext" style="top:50px; left:20px;" onclick="showhide('socialviewporttext','hidden')";>
+   <div id="socialbubble">
+   <img src="img/bubble.png" width="256" height="175" /> </div>
+  <div id="socialtext" style="top:40px;left:20px;">
+
+  </div>
+</div>
+<!--TWEET 1 END-->
+
+<!--FLAG 7 -->
+<div id="flag7" style="top:-1000px; left:0px" class="character_part">
+  <img src="img/flag7.png" width="300" height="300" alt=""/> 
+</div>
+<!--FLAG 7 -->
+<!--FLAG 8 -->
+<div id="flag8" style="top:-1000px; left:0px" class="character_part">
+  <img src="img/flag8.png" width="300" height="300" alt=""/> 
+</div>
+<!--FLAG 8 -->
+
+<!--BOUNUS 4 -->
+<div id="bonus4" style="top:-1000px; left:0px" class="character_part">
+  <img src="img/bonus4.png" width="300" height="112" alt=""/>
+  </div>
+<!--BOUNUS 8 -->
+
+
+<!--SCENE 4 Inside END-->
+</div>
+<!--SCENE 4 END-->
+ 
+ 
+ <!--SCENE 5 START-->
+<div id="scene5" name="scene5" class="viewport" style="top:-1000px;width:300px;height:300px">
+<div id="bg1" class="scene_bg">
+  <img src="bg/scene5.png" width="300" height="300" /> 
+  </div>
+<!--SCENE 5 Inside-->
+<!--SCENE 5 Inside END-->
+</div>
+<!--SCENE 5 END-->
+
+
+
+<!--SCENE 6 START-->
+<div id="scene6" name="scene6" class="viewport" style="top:-1000px;width:300px;height:300px">
+<div id="bg1" class="scene_bg">
+  <img src="bg/scene6.png" width="300" height="300" /> 
+  </div>
+<!--SCENE 6 Inside-->
+<!--SCENE 6 Inside END-->
+</div>
+<!--SCENE 6 END-->
+
+
+
+ <!--SCENE ELEVATOR DOORS -->
+<div id="elevatordoors" class="intro" style="top:-1000px; left:0px; width:300px; height:285px;">
+  <div id="doorleft" class="character_part" style="top:0px;left:-150px;">
+    <img src="img/edoor1.png" width="150" height="300" alt=""/> 
+   </div>
+   <div id="doorright" class="character_part" style="top:0px;left:300px;">
+    <img src="img/edoor2.png" width="150" height="300" alt=""/> 
+   </div>
+</div>
+ <!--SCENE ELEVATOR DOORS END -->
+
+<!--HELP BUTTON-->
+  <div id="helpbutton" style="top:3px; left:262px" class="character_part buttonopacity">
+    <img src="img/buttonhelp1.png" width="33" height="33" alt=""/> </div>
+<!--HELP BUTTON--> 
+<!--REWIND BUTTON-->
+	<div id="rewindbutton_vp" class="viewport buttonopacity" style="top:4px; left:225px; width:32px; height:32px;">
+   		<div id="rewindbutton" style="top:0px; left:0px" class="character_part">
+   	    <img src="img/buttonrewind.png" width="32" height="32" alt=""/> </div>
+    </div>
+   <!--REWIND BUTTON--> 
+   
+   <!--CLOUD BUTTON-->
+	<div id="cloudbutton_vp" class="viewport" style="top:0px; left:175px; width:50px; height:44px;">
+   		<div id="cloudbutton" style="top:0px; left:0px" class="character_part">
+        <img src="img/cloudicon.png" width="70" height="800" alt=""/> </div>
+    </div>
+   <!--CLOUD BUTTON--> 
+   
+    <!--ELEVATOR BUTTON-->
+	<div id="buttonfloor_vp" class="viewport" style="top:2px; left:2px; width:50px; height:48px;">
+   		<div id="buttonfloor" style="top:0px; left:0px" class="character_part">
+        <img src="img/buttonfloor.png" width="32" height="32" alt=""/> 
+        </div>
+    </div>
+   <!--ELEVATOR BUTTON--> 
+   
+<!--START BUTTON-->
+	<div id="startbuttonvp" class="viewport" style="top:130px; left:102px; width:160px; height:58px;">
+   	
+        <div id="startbutton" style="top:0px; left:0px" class="character_part">
+   	    <img src="img/button1.png" width="140" height="600" alt=""/> 
+ 
+        </div>
+    </div>
+   <!--START BUTTON--> 
+   
+   <!--STORY BUTTON--> 
+  <div id="storycloud" style="top:20px; left:0px" class="character_part">
+   	   <img src="img/storycloud.png" width="290" height="290" alt=""/> 
+  </div>
+  <!--STORY BUTTON--> 
+  
+  <!--CIRCLE FLOOR NAV-->
+<div class="characterholder buttonopacity" id="circlebutton" style="top:40px; left:35px">
+    <div id="circlefloor_vp" class="viewport" style="top:0px; left:0px; width:230px; height:230px;">
+  		<div id="circlefloor" style="top:0px; left:0px" class="character_part characteropacity">
+   	     <img src="img/circlefloor.png" width="230" height="230" alt=""/> 
+        </div>
+  	</div>
+    
+    <div id="m0" style="top:0px;left:100px; width:30px;height:30px" class="character_part cover"></div>
+	<div id="m1" style="top:50px;left:190px; width:30px;height:30px" class="character_part cover"></div>
+	<div id="m2" style="top:150px;left:185px; width:30px;height:30px" class="character_part cover"></div>
+	<div id="m3" style="top:200px;left:92px; width:30px;height:30px" class="character_part cover"></div>
+	<div id="m4" style="top:140px;left:8px; width:30px;height:30px" class="character_part cover"></div>
+	<div id="m5" style="top:50px;left:10px; width:30px;height:30px" class="character_part cover"></div>
+
+	<div id="mb0" style="top:44px;left:55px; width:125px;height:24px" class="character_part cover"></div>
+	<div id="mb1" style="top:68px;left:55px; width:125px;height:24px" class="character_part cover"></div>
+	<div id="mb2" style="top:90px;left:55px; width:125px;height:24px" class="character_part cover"></div>
+	<div id="mb3" style="top:114px;left:55px; width:125px;height:24px" class="character_part cover"></div>
+	<div id="mb4" style="top:138px;left:55px; width:125px;height:24px" class="character_part cover"></div>
+	<div id="mb5" style="top:162px;left:55px; width:125px;height:24px" class="character_part cover"></div>
+
+ </div>
+ <!--CIRCLE FLOOR NAV-->
+    
+</div>
+
+
+
+</div>
+
+<!--FOOTER-->
+<div id="footer">
+<center>
+    8 Ways Big Data Can Drive Growth &amp; Profitability
+    </center>
+</div>
+    <!--FOOTER-->
+
+<!--DOTS-->
+<div id="dots_end" style="left:22px;top:3px;" class="character_part">
+<!--dot1-->
+ <div id="dots1_vp" class="viewport" style="top:305px; left:6px; width:30px; height:28px;">
+   <div id="dot1" style="top:-28px; left:0px" class="character_part">
+       <img src="img/dots.png" width="300" height="55" alt=""/> 
+    </div>
+  </div>
+<!--dot1-->
+<!--dot2-->
+ <div id="dots2_vp" class="viewport" style="top:305px; left:30px; width:34px; height:28px;">
+   <div id="dot2" style="top:-28px; left:-32px" class="character_part characteropacity">
+       <img src="img/dots.png" width="300" height="55" alt=""/> 
+    </div>
+  </div>
+<!--dot2-->
+<!--dot3-->
+ <div id="dots3_vp" class="viewport" style="top:305px; left:60px; width:34px; height:28px;">
+   <div id="dot3" style="top:-28px; left:-70px" class="character_part characteropacity">
+       <img src="img/dots.png" width="300" height="55" alt=""/> 
+    </div>
+  </div>
+<!--dot3-->
+<!--dot4-->
+ <div id="dots4_vp" class="viewport" style="top:305px; left:92px; width:34px; height:28px;">
+   <div id="dot4" style="top:-28px; left:-110px" class="character_part characteropacity">
+       <img src="img/dots.png" width="300" height="55" alt=""/> 
+    </div>
+  </div>
+<!--dot4-->
+<!--dot5-->
+ <div id="dots5_vp" class="viewport" style="top:305px; left:124px; width:34px; height:28px;">
+   <div id="dot5" style="top:-28px; left:-150px" class="character_part characteropacity">
+       <img src="img/dots.png" width="300" height="55" alt=""/> 
+    </div>
+  </div>
+<!--dot5-->
+<!--dot6-->
+ <div id="dots6_vp" class="viewport" style="top:305px; left:157px; width:34px; height:28px;">
+   <div id="dot6" style="top:-28px; left:-190px" class="character_part characteropacity">
+       <img src="img/dots.png" width="300" height="55" alt=""/> 
+    </div>
+  </div>
+<!--dot6-->
+<!--dot7-->
+ <div id="dots7_vp" class="viewport" style="top:305px; left:190px; width:34px; height:28px;">
+   <div id="dot7" style="top:-28px; left:-230px" class="character_part characteropacity">
+       <img src="img/dots.png" width="300" height="55" alt=""/> 
+    </div>
+  </div>
+<!--dot7-->
+<!--dot8-->
+ <div id="dots8_vp" class="viewport" style="top:305px; left:225px; width:34px; height:28px;">
+   <div id="dot8" style="top:-28px; left:-270px" class="character_part characteropacity">
+       <img src="img/dots.png" width="300" height="55" alt=""/> 
+    </div>
+  </div>
+<!--dot8-->
+ </div>
+<!--DOTS-->
+
+<!--ANIMATION ENGINE-->
+<script src="wiggleit2.js"></script>
+<!--ANIMATION CLIPS-->
+<script src="mscene0.js"></script> 
+
+<!--ANIMATION Variables-->
+<script>
+var maxtime = 0;
+var anitick = .05;
+</script>
+
+<script src="intro1.js"></script>
+<script src="elevator.js"></script>
+<script src="setscene.js"></script>
+<script src="manageclicks.js"></script>
+<script src="generalscripts.js"></script>
+<script src="socialtweet.js"></script> 
+
+<script>
+    init();
+   playscene("intro1");
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+﻿{"frames": [
+
+{
+	"filename": "Symbol 10000",
+	"frame": {"x":0,"y":0,"w":250,"h":114},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":2,"w":261,"h":118},
+	"sourceSize": {"w":261,"h":118}
+}
+,{
+	"filename": "Symbol 10001",
+	"frame": {"x":0,"y":116,"w":252,"h":114},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":2,"w":261,"h":118},
+	"sourceSize": {"w":261,"h":118}
+}
+,{
+	"filename": "Symbol 10002",
+	"frame": {"x":0,"y":232,"w":252,"h":115},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":2,"w":261,"h":118},
+	"sourceSize": {"w":261,"h":118}
+}
+,{
+	"filename": "Symbol 10003",
+	"frame": {"x":0,"y":349,"w":254,"h":115},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":2,"w":261,"h":118},
+	"sourceSize": {"w":261,"h":118}
+}
+,{
+	"filename": "Symbol 10004",
+	"frame": {"x":0,"y":466,"w":255,"h":116},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":1,"w":261,"h":118},
+	"sourceSize": {"w":261,"h":118}
+}
+,{
+	"filename": "Symbol 10005",
+	"frame": {"x":0,"y":584,"w":256,"h":116},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":1,"w":261,"h":118},
+	"sourceSize": {"w":261,"h":118}
+}
+,{
+	"filename": "Symbol 10006",
+	"frame": {"x":0,"y":702,"w":258,"h":116},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":1,"w":261,"h":118},
+	"sourceSize": {"w":261,"h":118}
+}
+,{
+	"filename": "Symbol 10007",
+	"frame": {"x":0,"y":820,"w":259,"h":117},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":1,"w":261,"h":118},
+	"sourceSize": {"w":261,"h":118}
+}
+,{
+	"filename": "Symbol 10008",
+	"frame": {"x":0,"y":939,"w":260,"h":118},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":261,"h":118},
+	"sourceSize": {"w":261,"h":118}
+}
+,{
+	"filename": "Symbol 10009",
+	"frame": {"x":0,"y":1059,"w":261,"h":118},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":261,"h":118},
+	"sourceSize": {"w":261,"h":118}
+}],
+"meta": {
+	"app": "Adobe Flash Professional",
+	"version": "14.0.0.110",
+	"image": "startbutton1.png",
+	"format": "RGBA8888",
+	"size": {"w":280,"h":1200},
+	"scale": "1"
+}
+}

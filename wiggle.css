@@ -1,0 +1,26 @@
+.characterholder{
+	position:absolute;
+	
+}
+
+
+.character_part{
+	position:absolute;
+}
+
+.viewport{
+	position: absolute;
+	overflow: hidden;
+	top: 9px;	
+
+	
+}
+
+
+
+.scene_bg{
+	position:absolute;
+	z-index:auto;
+	
+	
+}

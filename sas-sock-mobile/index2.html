@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>wiggle it 2</title>
+<style>
+
+
+body{
+	background-color:#000;
+}
+
+.UNSELECTABLE {
+    -WEBKIT-USER-SELECT: NONE; /* SAFARI, CHROME */
+    -KHTML-USER-SELECT: NONE; /* KONQUEROR */
+    -MOZ-USER-SELECT: NONE; /* FIREFOX */
+    -MS-USER-SELECT: NONE; /* IE */
+    USER-SELECT: NONE; /* CSS3 */
+}
+.characterholder{
+	position:absolute;
+	
+}
+#beth{
+	position:absolute;
+	width:100px;
+	height:350px;
+	
+}
+
+.character_part{
+	position:absolute;
+}
+
+.viewport{
+	position:absolute;
+	overflow:hidden;
+	
+
+	
+}
+
+</style>
+<style>
+
+.scene_bg{
+	position:absolute;
+	z-index:auto;
+	
+	
+}
+
+
+</style>
+
+<script src="wiggles_intro.js"></script> 
+
+
+
+</head>
+
+<body>
+<!--SCENE 1 START-->
+<div name="scene1">
+<div id="bg1" class="scene_bg">
+  <!img src="bg/finance.png" width="983" height="600"  alt=""/> 
+  </div>
+
+
+
+
+<!--SOCK 1 START-->
+<div class="characterholder" id="sockholder" style="top:0px; left:180px">
+    <div id="sock-vp" class="viewport" style="top:100px; left:0px; width:100px; height:62px;"">
+		<div id="sock" style="top:0px; left:0px" class="character_part">
+      <img src="img/sock.png" width="100" height="850" alt=""/> </div>
+    </div>
+</div>
+<!--SOCK 1 END-->
+<!--SOCK 2 START-->
+<div class="characterholder" id="sockholder2" style="top:200px; left:180px">
+    <div id="sock2-vp" class="viewport" style="top:100px; left:0px; width:100px; height:62px;"">
+		<div id="sock2" style="top:0px; left:0px" class="character_part">
+      <img src="img/sock.png" width="100" height="850" alt=""/> </div>
+    </div>
+</div>
+<!--SOCK 2 END-->
+
+</div>
+<!--SCENE 1 END-->
+
+
+
+
+
+
+<script src="wiggleit2.js"></script> 
+
+</body>
+</html>
